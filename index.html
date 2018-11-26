@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS + CSS Clock</title>
+  <link rel="stylesheet" href='styles/style.css'>
+  <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="clock">
+      <div class="clock-face">
+        <div class="hand hour-hand"></div>
+        <div class="hand min-hand"></div>
+        <div class="hand second-hand"></div>
+      </div>
+    </div>
+    <div class="timeZones">
+    	<button class="warsaw" 
+    		data-url="images/warsaw-background.jpg" 
+    		data-interval="setInterval(function(){setDate()}, 1000)">	
+    		Warsaw
+    	</button>
+    	<button class="newYork" 
+    		data-url="images/newYork-background.jpg" 
+    		data-interval="setInterval(function(){setDate(-6)}, 1000)">
+    		New York
+    	</button>
+    	<button class="tokyo" 
+    		data-url="images/tokyo-background.jpg" 
+    		data-interval="setInterval(function(){setDate(8)}, 1000)">
+    		Tokyo
+    	</button>
+    	<button class="bangkok" 
+    		data-url="images/bangkok-background.jpg" 
+    		data-interval="setInterval(function(){setDate(6)}, 1000)">
+    		Bangkok
+    	</button>
+    	<button class="moscow" 
+    		data-url="images/moscow-background.jpg" 
+    		data-interval="setInterval(function(){setDate(2)}, 1000)">
+    		Moscow
+    	</button>
+    </div>
+
+</body>
+</html>
